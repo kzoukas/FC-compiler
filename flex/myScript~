@@ -1,0 +1,6 @@
+rm lex.yy.c
+rm mylexer
+flex ptucc_lex.l
+gcc -o mylexer lex.yy.c -lfl
+./mylexer
+

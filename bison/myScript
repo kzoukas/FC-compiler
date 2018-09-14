@@ -1,0 +1,6 @@
+rm lex.yy.c
+rm mycompiler
+bison -d -v -r all fc_parser.y
+flex fc_lex.l
+gcc -o mycompiler lex.yy.c fc_parser.tab.c -lfl
+./mycompiler < test.txt

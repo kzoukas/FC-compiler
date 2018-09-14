@@ -1,0 +1,9 @@
+
+//sdf
+//zxc
+/*sdfsdf*/
+ main()
+begin
+     writeString("Hello World!\n");
+     return 0;
+end

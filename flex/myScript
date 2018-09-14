@@ -1,0 +1,6 @@
+rm lex.yy.c
+rm mylexer
+flex fc_lex.l
+gcc -o mylexer lex.yy.c -lfl
+./mylexer < example-3.test-1.in
+
